@@ -1,4 +1,4 @@
-package com.corporation.util;
+package com.corporation.task01.util;
 
 public class StringUtil {
     

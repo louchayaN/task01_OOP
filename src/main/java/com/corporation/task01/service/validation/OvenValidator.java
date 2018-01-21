@@ -6,8 +6,8 @@ import java.util.Map;
 import com.corporation.task01.entity.criteria.ApplianceType;
 import com.corporation.task01.entity.criteria.Criteria;
 import com.corporation.task01.entity.criteria.SearchCriteria.Oven;
-import com.corporation.util.NumberUtil;
-import com.corporation.util.StringUtil;
+import com.corporation.task01.util.NumberUtil;
+import com.corporation.task01.util.StringUtil;
 
 public class OvenValidator implements ApplianceValidator {
 
