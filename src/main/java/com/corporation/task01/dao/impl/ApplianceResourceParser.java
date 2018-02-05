@@ -11,7 +11,7 @@ public class ApplianceResourceParser {
 
 		Map<String, String> applianceResourceParametres = new HashMap<>();
 
-		if (resourseLine.matches("^(?i)" + applianceType + ".+")) {
+		if (resourseLine.matches("^(?i)" + applianceType + ".+")) {// многовато лишних объектов String плодим
 			resourseLine = resourseLine.replaceAll("^.+: ", "");
 			for (String s : resourseLine.split(", ")) {
 				String[] parametres = s.split("=");
