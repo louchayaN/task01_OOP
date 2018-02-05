@@ -12,7 +12,9 @@ public class RefrigeratorEntityBuilder implements ApplianceEntityBuilder {
 
 		Refrigerator refrigerator = new Refrigerator();
 
-		refrigerator.setPowerConsumption(Double.parseDouble(applianceResourceParametres.get("POWER_CONSUMPTION")));
+		refrigerator.setPowerConsumption(Double.parseDouble(applianceResourceParametres.get("POWER_CONSUMPTION"))); // длинноватые строки
+		// парсинг с внутренностями можно было реализовать красиво отдельным методом
+		// и константы в коде должны быть именованы
 		refrigerator.setWeight(Double.parseDouble(applianceResourceParametres.get("WEIGHT")));
 		refrigerator.setFreezerCapacity(Double.parseDouble(applianceResourceParametres.get("FREEZER_CAPACITY")));
 		refrigerator.setOverallCapacity(Double.parseDouble(applianceResourceParametres.get("OVERALL_CAPACITY")));
